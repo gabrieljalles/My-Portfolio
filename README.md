@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Technical Parts
 
-## Getting Started
+### Inicialization of project
+    npx create-next-app@latest ./
+    √ Would you like to use TypeScript? ... Yes\
+    √ Would you like to use ESLint? ... Yes\
+    √ Would you like to use Tailwind CSS? ... Yes\
+    √ Would you like to use `src/` directory? ... No\
+    √ Would you like to use App Router? (recommended) ... Yes\
+    √ Would you like to customize the default import alias (@/*)? ... No\
 
-First, run the development server:
+### installed other packages
+tailwindcss-animate\
+framer-motion clsx tailwind-merge [animations in project](https://www.framer.com/motion/)\
+mini-svg-data-uri\
+next-themes [create a dark mode in the project](https://ui.shadcn.com/docs/dark-mode/next)
+react-icons [Library of react icons](https://react-icons.github.io/react-icons/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Extensions you will need to install:
+    * Tailwind css intel
+    * ES7+ React/Redux/React-Native snippets
+    * PostCSS Language Support to fix the error: tailwind error unknown at rule
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### To run the application 
+    npm run dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Steps to initiate the application
+    1. Delete favicon
+    2. erase almost all the content of globals.css, leaving only @tailwind
+    3. In the layout, change the name of the title and description of application
+    4. Delete all the content of page.tsx, leaving only the structure of the function
+    5. In twailwind.config.ts you can create a name of the colors you want to use
+    6. Create a folder named components
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Tips for creating a new TSX
+    * when the x.tsx is empty, if you digit rafce and press enter, the program will create the complete initial structure of your file. it is possible only if you have the extension ES7...
 
-## Learn More
+### Concepts *PRECISA CONFERIR*
 
-To learn more about Next.js, take a look at the following resources:
+##### Globals
+    Responsible for the design standards
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+##### Layout
+    Responsible for the font
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+___
+# Design Parts
 
-## Deploy on Vercel
+# How to use spotlight effects
+according to the website https://ui.aceternity.com/components/spotlight
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Install the package npm i framer-motion clsx tailwind-merge
+2. if the folder named lib doesn´t exist, create and then, verify the utils.ts exists, thus create the a file with the title cn.ts. After, paste the code.
+3. In components, create a folder named ui and inside of its, spotilight.ts
+4. paste the code into the tailwind.config.js
