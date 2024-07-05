@@ -11,7 +11,7 @@
 
 ### installed other packages
 tailwindcss-animate\
-framer-motion clsx tailwind-merge [animations in project](https://www.framer.com/motion/)\
+framer-motion clsx tailwind-merge [animations in project](https://ui.aceternity.com/components/)\
 mini-svg-data-uri\
 next-themes [create a dark mode in the project](https://ui.shadcn.com/docs/dark-mode/next)
 react-icons [Library of react icons](https://react-icons.github.io/react-icons/)

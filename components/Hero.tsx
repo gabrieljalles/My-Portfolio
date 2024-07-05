@@ -2,6 +2,7 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
+import BlinkEye from './ui/BlinkEye'
 
 const Hero = () => {
   return (
@@ -29,13 +30,11 @@ const Hero = () => {
                     Hi, I&apos;m Gabriel Jalles, a dreamer Developer based in Brazil
                 </p>
                 <a href="#about">
-                    <MagicButton title="Show my work" icon= />
+                    <MagicButton title="Check out my work" icon={()=><BlinkEye/>} position="left" />
                 </a>
             </div>
         </div>
     </div>
-    
-      
   )
 }
 
